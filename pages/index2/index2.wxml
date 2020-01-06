@@ -1,0 +1,18 @@
+<!--pages/index2/index2.wxml-->
+<view class="ranking_box" >
+  <navigator hover-stop-propagation="false"
+        url="../index/detail/detail?college={{item.college}}&department={{item.department}}&desc={{item.desc}}&head={{item.head}}&id={{item.id}}&name={{item.name}}&video={{item.video}}&votes={{item.votes}}"
+        open-type="navigate"
+        hover-class="other-navigator-hover"
+      class="ranking_list" wx:for="{{ranking}}" wx:if="{{ranking}}" wx:key="{{ranking}}" data-id="{{index}}">
+    <view class="player_img">
+      <image src="{{item.head}}"></image>
+    </view>
+    <view class="player_detail">
+      <view class="player_title iconfont icon-11122-copy"><text>{{item.name}}</text><text>{{item.id}}号</text></view>
+      <view class="player_Num iconfont icon-paixingbang"><text>{{item.votes}}</text>票</view>
+      <view class="player_intro">{{item.desc}}</view>
+    </view>
+    <view class='"palyer_ranking {{index==0?"red":""||index==1?"orange":""||index==2?"green":""||index!==(0||1||2)?"putong":""}}"'>{{index+1}}</view>
+  </navigator>
+</view>

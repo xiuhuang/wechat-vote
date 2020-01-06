@@ -1,0 +1,45 @@
+<!--pages/index/detail/detail.wxml-->
+
+<view class="top_player_box">
+  <view class="top_player_head">
+    <image  class="top_player_headimg" lazy-load="true" src="{{head}}"></image>
+  </view>
+  <view class="top_player_title">{{name}}</view>
+</view>
+<!-- 选手视屏 -->
+  <view id="myVideo" class="goods-box">
+  <view style="border-radius:20rpx;">
+  <txv-video style="border-radius:20rpx;" class="goods-video" vid="{{video}}" playerid="txv{{id}}" width="100%" autoplay="{{true}}"></txv-video>
+  </view>
+      
+  </view>
+
+
+<!-- 选手信息 -->
+<view class="player_detail_title">选手信息</view>
+<view class="player_detail">
+  <view class="player_value">选手编号：<text class="player_content">{{id}}号</text></view>
+  <view class="player_name">选手姓名：<text class="player_content">{{name}}</text></view>
+  <view class="player_name">选手学校：<text class="player_content">{{college}}</text></view>
+  <view class="player_name">选手院系：<text class="player_content">{{department}}</text></view>
+  <view class="player_name player_votes">当前票数：<text class="player_content">{{votes}}</text></view>
+  <view class="player_name player_describe">选手描述：
+    <view class="player_desc">{{desc}}</view>
+  </view>
+  <!-- 选手照片 -->
+  <view class="player_name player_imgs">
+    <image lazy-load="true" mode="widthFix" src="{{head}}"></image>
+  </view>
+</view>
+
+<!-- 底部 -->
+<view class="detail_footer">
+  <view class="detail_footer_list" bindtap='returnIndex'>
+      <!-- <view class="detail_footer_img iconfont icon-shouye1"></view>   -->
+      <view class="detail_footer_title">回首页</view>  
+  </view>
+  <view  class="detail_footer_list" bindtap='returnRink'>
+      <!-- <view class="detail_footer_img iconfont icon-xingyepaixing"></view>   -->
+      <view class="detail_footer_title">榜单</view>  
+  </view>
+</view>

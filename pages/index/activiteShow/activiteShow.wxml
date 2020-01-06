@@ -1,0 +1,15 @@
+<!--pages/index/activiteShow/activiteShow.wxml-->
+<!-- 活动简介 -->
+<view class="bottom">
+  <view class="activiterule">投票规则</view>
+  <view class="rule_detail">
+    每人每天都有pick三位选手的权利，但是只有一次性投出三票并且选择不同的选手才可以提交成功哦！
+    <view>规则和时间大家都了解清楚了，赶快往下给你pick的同学投上你欣赏赞许的一票吧！</view>
+  </view>
+    <view class="overtime">投票开始时间：2019年5月17号00点</view>
+  <view class="overtime">投票截止时间：2019年5月20号24点</view>
+    <!-- <view class="rule_detail_1">
+    南京大学学生职业发展协会“职场奇葩说”线上投票开启！你最pick谁！
+职场奇葩说，你说我们听！经过前期的征集，同学们参加的情绪很高昂，今天我们现在正式开启了初赛线上投票的通道，才华不容埋没，精彩岂能错过，哪位选手能够去到我们的决赛现场，决定权就在你的手里！
+  </view> -->
+</view>

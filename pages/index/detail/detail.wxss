@@ -1,0 +1,186 @@
+/* pages/index/detail/detail.wxss */
+.top_player_box{
+  width:100%;
+  height:100rpx;
+  padding:10rpx;
+  position: relative;
+  overflow: hidden;
+  background:#F9F9F9;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.top_player_box .top_player_head{
+  width:80rpx;
+  height:80rpx;
+  display:block;
+  border-radius:50%;
+  margin-right:.8em;
+}
+.top_player_box .top_player_head .top_player_headimg{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.top_player_box .top_player_title{
+  text-align:center;
+  color:#333;
+  font-size: 14px;
+  line-height:90rpx;
+}
+.goods-box{
+  width:100%;
+  height: auto;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  margin-top:30rpx;
+  border-radius: 20rpx!important;
+  /* background:#F2F2F2; */
+  /* box-shadow: 0 0 1rem 0 rgba(0,0,0,.3); */
+}
+.mod_player{
+  border-radius: 20rpx!important;
+}
+video {
+  border-radius: 20rpx!important;
+}
+/* 选手照片 */
+.player_head_box{
+  width:100%;
+  height: auto;
+  padding:20rpx;
+  box-sizing: border-box;
+}
+.player_head_box .player_name{
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+  line-height:1.8;
+  font-size:13px;
+  color:#333;
+}
+.player_head_box .player_imgs{
+  width:710rpx;
+  height:auto;
+  display: block;
+  margin:20rpx auto;
+  box-sizing: border-box;
+}
+.player_head_box .player_imgs image{
+  width:100%;
+  height:100%;
+  display: block;
+}
+
+/* 选手信息 */
+.player_detail_title{
+  width:100%;
+  height: 80rpx;
+  padding:20rpx;
+  box-sizing: border-box;
+  font-size:15px;
+  color: #0E0E0E;
+  font-weight: 600;
+  text-align: center;
+  margin-top:15rpx;
+  background:#F9F9F9;
+  border-bottom:1px solid #ccc;
+}
+.player_detail{
+  width:100%;
+  height: auto;
+  padding:20rpx 20rpx 160rpx 20rpx;
+  box-sizing: border-box;
+}
+.player_detail .player_value{
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+  line-height:1.8;
+  font-size:13px;
+  font-weight: 600;
+  color:#0E0E0E;
+}
+.player_detail .player_value .player_content{
+  margin-left: 1.5em;
+  font-size:13px;
+  color:#0E0E0E;
+  font-weight: normal;
+}
+.player_detail .player_name{
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+  line-height:1.8;
+  font-size:13px;
+  font-weight: 600;
+  color:#0E0E0E;
+}
+.player_detail .player_name .player_content,.player_detail .player_value .player_content{
+  margin-left: 1.5em;
+  font-size:13px;
+  color:#0E0E0E;
+  font-weight: normal;
+}
+.player_votes{
+  margin-bottom:10rpx;
+}
+.player_describe{
+  border-top:1px solid #e5e5e5;
+}
+.player_detail .player_name .player_desc{
+  text-indent:20px;
+  line-height: 1.6;
+  color:#666;
+  font-weight: normal;
+}
+
+.player_detail .player_imgs{
+  width:710rpx;
+  height:auto;
+  display: block;
+  margin:20rpx auto;
+  box-sizing: border-box;
+  border-radius:20rpx;
+}
+.player_detail .player_imgs image{
+  width:100%;
+  height:100%;
+  display: block;
+  border-radius:20rpx;
+}
+
+/* 底部 */
+.detail_footer{
+  width:100%;
+  height: 116rpx;
+  position: fixed;
+  left: 0;
+  bottom:0;
+  background:#fff;
+  z-index: 9999999;
+  box-sizing: border-box;
+  display: flex;
+  padding:10rpx;
+  justify-content: space-around;
+  align-items:center;
+  border-top:1px solid #CDCDCD;
+}
+.detail_footer .detail_footer_list{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail_footer .detail_footer_list .detail_footer_img{
+  line-height: 1;
+  font-size:25px;
+  color:#7A7E83;
+  font-weight:500;
+}
+.detail_footer .detail_footer_list .detail_footer_title{
+  line-height: 1;
+  font-size:16px;
+  color:#7A7E83;
+}

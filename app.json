@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/activiteShow/activiteShow",
+    "pages/index/detail/detail",
+    "pages/index2/index2",
+    "pages/login/login",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#383838",
+    "selectedColor": "#D65000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "榜单"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "高重杯·职场奇葩说投票",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true,
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.3.0",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

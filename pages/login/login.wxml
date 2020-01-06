@@ -1,0 +1,4 @@
+<!--pages/login/login.wxml-->
+<view>-该小程序将获得您的手机号码</view>
+<button open-type='getPhoneNumber' bindgetuserinfo='getPhoneNumber'>立即授权</button>
+<!-- <button open-type='getLocalImage' bindtap='getLocalImage'></button> -->

@@ -1,0 +1,101 @@
+/* pages/index2/index2.wxss */
+.ranking_box{
+  width:100%;
+  height:auto;
+  box-sizing: border-box;
+  padding:30rpx 50rpx;
+  position:relative;
+  overflow: hidden;
+}
+.ranking_box .ranking_list{
+  padding:20rpx 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom:1px dashed #E07D40;
+}
+.ranking_box .ranking_list .player_img{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  margin-right:.8em;
+}
+.ranking_box .ranking_list .player_img image{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+}
+.ranking_box .ranking_list .player_detail{
+  flex:1;
+  text-align: left;
+}
+.ranking_box .ranking_list .player_detail .player_title{
+  font-size:13px;
+  color:#0E0E0E;
+  font-weight:500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ranking_box .ranking_list .player_detail .player_title text{
+  font-size:13px;
+  color:#0E0E0E;
+  font-weight:600;
+}
+.ranking_box .ranking_list .player_detail .player_title text:nth-child(1){
+  margin-left:.5em;
+}
+.ranking_box .ranking_list .player_detail .player_Num{
+  font-size:13px;
+  color:#333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height:1.8;
+}
+.ranking_box .ranking_list .player_detail .player_Num text{
+  font-size:13px;
+  color:#333;
+  margin-left:.5em;
+}
+.ranking_box .ranking_list .player_detail .player_intro{
+  font-size:10px;
+  color:#666;
+   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ranking_box .ranking_list .palyer_ranking{
+  font-size:16px;
+  color:#fff;
+  background:#E07D40;
+  border-radius:6rpx;
+  margin-left:.5em;
+  width:54rpx;
+  height: 54rpx;
+  text-align: center;
+  line-height:54rpx;
+  /* padding:6rpx 18rpx; */
+}
+/* .red{
+  font-size: 24px!important;
+  color:red!important;
+  font-weight: bold;
+}
+.orange{
+  font-size: 20px!important;
+  color:orange!important;
+  font-weight: bold;
+}
+.green{
+  font-size: 18px!important;
+  color:green!important;
+  font-weight: bold;
+} */

@@ -1,0 +1,74 @@
+<!-- top -->
+<view class="banner_box">
+  <view class="border_banner">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+          interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" current="" current-item-id="" next-margin="{{nextMargin}}px" indicator-dots="">
+      <block wx:for="{{background}}" wx:key="*this" wx:key="{{background}}">
+        <swiper-item>
+          <view class="swiper-item swiper_img">
+            <image src="{{item}}" class="slide-image" mode="widthFix" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+
+<!-- 参与详情 -->
+<view class="top_detial">
+  <view class="top_participator">
+    <view class="top_title">参赛者</view>
+    <view class="top_nUm">{{participator}}</view>
+  </view>
+  <view class="top_participator">
+    <view class="top_title">总票数</view>
+    <view class="top_nUm">{{totalVotes}}</view>
+  </view>
+</view>
+<!-- 选手 -->
+<view class="player_box">
+    <view class="player_list" wx:for="{{items}}" wx:if="{{index<motto}}" wx:key="{{items}}" data-id="{{index}}"  bindtap='checkboxChange'>
+      <navigator  hover-stop-propagation="false" class="player_img"
+         url="detail/detail?college={{item.college}}&department={{item.department}}&desc={{item.desc}}&head={{item.head}}&id={{item.id}}&name={{item.name}}&video={{item.video}}&votes={{item.votes}}"
+        open-type="navigate"
+        hover-class="other-navigator-hover"
+      >
+        <image lazy-load="true" mode="{{imgFix}}" class="player_photo" src="{{item.head}}"></image>
+        <view class="player_id">{{item.id}}</view>
+      </navigator>
+      <view class="player_bottom">
+        <view class="player_title"><text class="iconfont icon-11122-copy"></text>{{item.name}}</view>
+        <view class="player_votes"><text class="iconfont icon-paixingbang"></text><text>{{item.votes}} 票</text></view>
+        <view bindtap="checkChange" class="checkbox{{item.checked ?' checkedActive':''}}">选择</view>
+      </view>
+    </view>
+</view>
+<view class="load_more_btn" bindtap='loadMoreBtn'>点击加载更多</view>
+
+<!-- 按钮 -->
+<button disabled="{{disabled}}" open-type='{{alreadyAcquire == 0 ? "getPhoneNumber":""}}' bindtap='{{alreadyAcquire == 0 ? "":"getPick"}}' bindgetphonenumber='{{alreadyAcquire == 0 ? "getPhoneNumber":""}}' class="pickBtn" >投票</button>
+<!-- 活动简介 -->
+<view class="bottom">
+  <view class="rule_detail_1_title">
+    <view class="rule_detail_1_title_left">投票时间</view>
+    <view class="rule_detail_1_title_content">
+      <view class="title_content_list">
+        <view>投票开始时间</view>
+        <view>2019年5月17日00点</view>
+      </view>
+      <view>
+        <view class="title_content_list">投票截止时间</view>
+        <view>2019年5月20日24点</view>
+      </view>
+    </view>
+  </view>
+  <view class="rule_detail_1">
+    <view class="rule_list">南京大学学生职业发展协会“职场奇葩说”线上投票开启！你最pick谁！
+职场奇葩说，你说我们听！经过前期的征集，同学们参加的情绪很高昂，今天我们现在正式开启了初赛线上投票的通道，才华不容埋没，精彩岂能错过，哪位选手能够去到我们的决赛现场，决定权就在你的手里！</view>
+  </view>
+  <view class="rule_detail">
+    <view class="rule_detail_title">活动规则</view>
+    <view class="rule_list">  每人每天都有pick三位选手的权利，但是只有一次性投出三票并且选择不同的选手才可以提交成功哦！</view>
+    <view class="rule_list">规则和时间大家都了解清楚了，赶快往下给你pick的同学投上你欣赏赞许的一票吧！</view>
+  </view>
+</view>
